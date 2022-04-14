@@ -242,3 +242,416 @@
 // console.log(findLongestWord("The quick brown3 fox jumped over the lazy dog"));
 // console.log(findLongestWord("Google do a rollfd"));
 // console.log(findLongestWord("May the force be with4 you"));
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+// let newarray=[];
+// for(let i; i<numbers.length; i +=1)
+// {
+//   if (numbers[i] > value) { newarray.push(numbers[i]); }
+
+  
+// }
+// //return numbers.length;
+// //return newarray;
+//   return numbers;
+//   // Change code above this line
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+// let newar=[];
+
+// for(let i=0; i<array1.length; i+=1){
+//   if (array2.includes(array1[i])) { newar.push(array1[i]); }
+//   }
+//    return newar;
+//  // Change code above this line
+
+// }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+// const propName = "xxx";
+// const user = {
+//   age: 25,
+//   // Имя этого свойства будет взято из значения переменной propName
+//   [propName]: "Генри Сибола",
+// };
+
+// console.log(user.xxx); // 'Генри Сибола'
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     console.log(this);
+//   },
+// };
+
+// bookShelf.getBooks();
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+
+
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+// bookShelf.addBook("The Mist");
+// bookShelf.addBook("Dream Guardian");
+// console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'The Mist', 'Dream Guardian']
+// bookShelf.removeBook("The Mist");
+// console.log(bookShelf.getBooks());
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   //console.log(key);
+//   // Значение свойства с таким ключом
+//   console.log(book[key]);
+// }
+
+// console.log(book.title);
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'rating']
+
+// const values = Object.values(book);
+// console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[1];
+// //const lastTag = apartment.tags[2];
+// //const lastTag = apartment.tags[3];
+
+//  const a = apartment.tags[apartment.tags.length-1];
+// // Change code above this line
+
+// console.log(ownerName);
+// console.log(ownerPhone);
+// console.log(ownerEmail);
+// console.log(numberOfTags);
+// console.log(firstTag);
+// console.log(lastTag);
+// console.log(a);
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значение первого аргумента
+//   console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
+
+//multiply(1, 2);
+//multiply(1, 2, 3);
+//multiply(1, 2, 3, 4);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+// ];
+
+// for (const book of books) {
+//   const { title, author, rating } = book;
+
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   name,
+//   tag,
+//   stats: { followers, views: userViews, likes: userLikes },
+// } = user;
+
+// console.log(name); // Jacques Gluke
+// console.log(tag); // jgluke
+// console.log(followers); // 5603
+// console.log(userViews); // 4827
+// console.log(userLikes); // 1308
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// apartment.area=60;
+// apartment.rooms=3;
+
+// const location={};
+// apartment.location=location;
+
+// apartment.location.country="Jamaica";
+// apartment.location.city="Kingston";
+
+
+
+// // Change code below this line
+
+// console.log(apartment);
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+// const result=[];
+
+// for(const values of products)
+// {
+//   console.log(values);
+//   result.push(values.price);
+//   console.log(values[propName]);
+ 
+  
+//   }
+//  console.log(result);
+// //return result;
+//   // Change code above this line
+// }
+
+// console.log(getAllPropValues('price'));
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   for (const prod of products) {
+//     console.log(prod);
+//     const keys = Object.keys(prod);
+//     //console.log(keys);
+//   // if(keys.includes('name')) {console.log(prod.name);}  else {console.log('eeee');}
+//    // if(prod['name']) {console.log(prod.name);}  else {console.log('eeee');}
+//    // if(prod.name) {console.log(prod.name);}  else {console.log('eeee');}
+//    // if(prod.name === 'Radar') {console.log(prod.name);}  else {console.log('eeee');}
+//      if(prod.name === productName) {console.log(prod.name);}  else {console.log('eeee');}
+//   }
+  
+//   // Пиши код выше этой строки
+// }
+
+// //console.log(calculateTotalPrice("Blaster"));
+//  console.log(calculateTotalPrice("Radar"));
+// // console.log(calculateTotalPrice("Droid"));
+// // console.log(calculateTotalPrice("Grip"));
+// // console.log(calculateTotalPrice("Scanner"));
+
+
+// function calculateMeanTemperature(forecast) {
+//   // const todayLow = forecast.today.low;
+//   // const todayHigh = forecast.today.high;
+//   // const tomorrowLow = forecast.tomorrow.low;
+//   // const tomorrowHigh = forecast.tomorrow.high;
+// //const {{todayLow:today.low, todayHigh:high, tomorrowLow, tomorrowHigh}=forecast;
+//   // Change code above this line
+ 
+//   const { today: { low: todayLow, high: todayHigh, } , tomorrow:{low: tomorrowLow, high: tomorrowHigh}}= forecast;
+//   console.log(todayLow, todayHigh, tomorrowLow, tomorrowHigh);
+//    return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+// console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
+
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+
+  // addPotion(newPotion) {
+  //   const { name, price } = newPotion;
+  //   console.log(name);
+  //   console.log(price);
+  //   console.log(newPotion);
+    
+  //   // for (let i = 0; i < this.potions.length; i += 1) {
+  //   //   console.log(this.potions[i].name);
+  //   //   if (this.potions[i].name === name) { return `Naideno ${this.potions[i].name} ravnoe ${name} s indexom ${i}`; }
+  // addPotion(newPotion) {
+  //   const {name} = newPotion;
+  //   for (let pot of this.potions) {
+  //     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
+  //   }
+  //   this.potions.push(newPotion);
+
+    //   // }
+    //   // this.potions.push(newPotion);
+   
+   
+    //   for (let pot of this.potions) {
+
+    //     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
+   
+    //   }
+    //      this.potions.push(newPotion);
+    // },
+
+    // removePotion(potionName) {
+    //   for (let i = 0; i < this.potions.length; i += 1) { 
+    //   //console.log(this.potions[i]);
+    //     if (potionName === this.potions[i].name) { this.potions.splice(i, 1); }
+    //     //{ this.potion.splice(i, 1); }
+    //     //{ console.log(this.potions[i]); }
+    //   }
+  
+    //   // const potionIndex = this.potions.indexOf(potionName);
+
+    //   // if (potionIndex === -1) {
+    //   //   return `Potion ${potionName} is not in inventory!`;
+    //   // }
+    //   // rabotaet!!!!  this.potions.splice(1, 1);
+    //   // this.potions.splice(potionIndex, 1);
+    // },
+  // },
+
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === oldName) {
+       
+//      this.potions[i].name = newName;
+       
+//       }
+//     }return `Potion ${oldName} is not in inventory!` ;
+        
+    
+//     //this.potions[i].name = newName;
+
+//     //name1.name = newName; 
+//     // const potionIndex = this.potions.indexOf(oldName);
+
+//     // if (potionIndex === -1) {
+//     //   return `Potion ${oldName} is not in inventory!`;
+//     // }
+
+//     // this.potions.splice(potionIndex, 1, newName);
+//   },
+// }
+
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+//console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+//console.log(atTheOldToad.potions);
+
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth"); 
+// //console.log(atTheOldToad.potions);
+// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"); 
+// //console.log(atTheOldToad.potions);
+// console.log(atTheOldToad.potions);
+
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   addPotion(newPotion) {
+//     const { name } = newPotion;
+//     for (let pot of this.potions) {
+//       if (name === pot.name) { return `Error! Potion ${name} is already in your inventory!` }
+//     }
+//     this.potions.push(newPotion);
+//   },
+// }
+
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+
+
+
+
+// console.log(atTheOldToad.potions);
