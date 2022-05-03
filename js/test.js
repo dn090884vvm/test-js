@@ -655,3 +655,647 @@
 
 
 // console.log(atTheOldToad.potions);
+
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Имитируем доступность абонента случайным числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient); 
+// }
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+//   // Логика принятия звонка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+//   // Логика активации автоответчика
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+//   // Логика записи голограммы
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Поли", takeCall, leaveHoloMessage);
+
+
+// function registerGuest(name, callback) {
+//   console.log(`Регистрируем гостя ${name}.`);
+//   callback(name);
+// }
+
+// // Передаём инлайн функцию greet как колбэк
+// registerGuest("Манго", function greet(name) {
+//   console.log(`Добро пожаловать ${name}.`);
+// });
+
+// // Передаём инлайн функцию notify как колбэк
+// registerGuest("Поли", function notify(name) {
+//   console.log(`Уважаемый(ая) ${name}, ваш номер будет готов через 30 минут.`);
+// });
+
+
+
+// function greet(name1xxx,name2xxx) {
+//   console.log(`Добро пожаловать ${name1xxx},--- ${name2xxx}.`);
+// }
+
+// // Функция высшего порядка
+// function registerGuest(name1,name2,callback) {
+//   console.log(`Регистрируем гостя ${name1} and гостя ${name2}.`);
+//  callback(name1,name2);
+// }
+
+// registerGuest("Манго",'Voha', greet);
+
+
+
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+  
+//   order(pizzaName, onSuccess, onError) {
+  
+//     if (this.pizzas.includes(pizzaName)) {
+//      return onSuccess(pizzaName); 
+// }
+//     return onError(pizzaName); 
+
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(pizzaName) {
+//   return `Error! There is no pizza with a name ${pizzaName} in the assortment.`;
+// }
+
+// // Method calls with callbacks
+// // pizzaPalace.order('Smoked', makePizza, onOrderError);
+// // pizzaPalace.order('Four meats', makePizza, onOrderError);
+// // pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// // pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Four meats', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Имитируем доступность абонента случайным числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+//   // Логика принятия звонка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+//   // Логика активации автоответчика
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+//   // Логика записи голограммы
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Поли", takeCall, leaveHoloMessage);
+
+// const users= [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     skills: ["ipsum", "lorem"],
+//     gender: "male",
+//     age: 37,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//     gender: "female",
+//     age: 34,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//     gender: "male",
+//     age: 24,
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     skills: ["adipisicing", "irure", "velit"],
+//     gender: "female",
+//     age: 21,
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     skills: ["ex", "culpa", "nostrud"],
+//     gender: "male",
+//     age: 27,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     skills: ["non", "amet", "ipsum"],
+//     gender: "male",
+//     age: 38,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     skills: ["lorem", "veniam", "culpa"],
+//     gender: "female",
+//     age: 39,
+//   },
+// ];
+
+// const getUserNames = users => {
+    
+// //return  users.map(user => user.name)
+//   return users.map(mail => mail.email);
+// };
+  
+// console.log(getUserNames(users));
+
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(value => value % 2 === 0);
+// const oddNumbers = numbers.filter(value => value % 2 !== 0);
+// const oddNumbers1 = numbers.filter(function (value) { if (value % 2 !== 0) return value; });
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+// console.log(oddNumbers1);
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+
+// Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+//    return  users.filter(nam => nam.friends.includes(friendName) );
+// };
+// // Change code above this line
+
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
+
+// const getFriends = (users) => {
+//    const allFriends=users.flatMap(user=> user.friends);
+  
+//   const uniqFriends = allFriends.filter((element, index, arrow) => arrow.indexOf(element) === index);
+//   return uniqFriends;
+// };
+
+// console.log(getFriends(users));
+
+// const getActiveUsers = (users) => {
+//   return users.filter(user => user.isActive === true);
+// };
+
+// console.log(getActiveUsers(users));
+
+// const isAnyUserActive = users => {
+//   return users.some(user => user.isActive === true);
+// };
+
+// console.log(isAnyUserActive(users));
+
+// const calculateTotalBalance = users => {
+//   return users.reduce((total, number) => {
+//     return total + number.balance;
+//   }, 0);
+  
+// };
+
+// console.log(calculateTotalBalance(users));
+
+// const getTotalFriendCount = users => {
+//   return users.reduce(
+//     (total, user) => { return total + user.friends.length; }, 0);
+// };
+
+// console.log(getTotalFriendCount(users));
+
+// const sortByAscendingBalance = users => {
+//   return users.sort((a, b) => a.balance - b.balance)
+// };
+
+// console.log(sortByAscendingBalance(users));
+
+// const sortByDescendingFriendCount = users => {
+//   return [...users].sort((a,b) => b.friends.length - a.friends.length);
+// };
+
+// console.log(sortByDescendingFriendCount(users));
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].filter(element => element.rating > MIN_BOOK_RATING)
+//   .map(authors => authors.author)
+// .sort((a, b) => a.localeCompare(b));
+
+
+// console.log(names);
+
+// const users =[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+
+// const getNamesSortedByFriendCount = users => {
+//   return [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(local => local.name);
+// };
+
+// console.log(getNamesSortedByFriendCount(users));
+
+// const getSortedFriends = users => {
+
+//   return [...users].flatMap(local => local.friends)
+//     .filter((co, ind, arr) => arr.indexOf(co) === ind)
+//   .sort((a,b) => a.localeCompare(b));
+   
+// };
+
+// console.log(getSortedFriends(users));
+
+// const getTotalBalanceByGender = (users, gender) => {
+//   return [...users].filter(value => value.gender === gender)
+//     .map(value => value.balance)
+//     .reduce((total, count) => { return total +count});
+// };
+
+// console.log(getTotalBalanceByGender(users, 'male'));
+// console.log(getTotalBalanceByGender(users, 'female'));
+
+
+
+// class Storage {
+
+//     constructor(items)
+//     {
+//         this.items= items;
+//     }
+
+//     getItems() {
+//         return this.items;
+//     }
+//     addItem(newItem) {
+// this.items.push(newItem);
+//     }
+
+//     removeItem(itemToremove)
+//     {
+//       const index1 = this.items.findIndex((element) => element === itemToremove);
+//     //  console.log(index1);
+//         this.items.splice(index1,1);
+        
+//     }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// class User {
+//   static #takenEmails = [];
+
+//   static isEmailTaken(email) {
+//     console.log(User.#takenEmails);
+//     return User.#takenEmails.includes(email);
+   
+//   }
+
+//   #email;
+
+//   constructor({ email }) {
+//     this.#email = email;
+//     User.#takenEmails.push(email);
+//   }
+// }
+
+// const mango = new User({ email: "mango@mail.com" });
+// const poly = new User({ email: "poly@mail.com" });
+
+// console.log(User.isEmailTaken("poly@mail.com"));
+// console.log(User.isEmailTaken("mango@mail.com"));
+
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   // Change code below this line
+// //accessLevel;
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+// constructor ({email, accessLevel}) {
+//   super(email);
+//  this.accessLevel = accessLevel;
+  
+// }
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+// const i = 5;
+// console.log('Hello',i);
+
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   // get email() {
+//   //   return this.email;
+//   // }
+
+//   // set email(newEmail) {
+//   //   this.email = newEmail;
+//   // }
+// }
+
+// class ContentEditor extends User {
+//   constructor({ email, posts }) {
+//     // Вызов конструктора родительского класса User
+//    super();
+//     this.email = email;
+//     this.posts = posts;
+//     //this.email = email;
+//   }
+// }
+
+// const editor = new ContentEditor({ email: "mango@mail.com", posts: [1,2] });
+// console.log(editor); // { email: 'mango@mail.com', posts: [] }
+// console.log(editor.email); // 'mango@mail.com'
+// console.log(editor.posts);
+
+// const array = [1, 10, 50, 34, 60, 4, 6, 37];
+
+// // let maxIndex = array.indexOf(Math.max(...array));
+// // console.log(maxIndex);
+
+// function fn(args) {
+//   let newar=[];
+//   for (let i = 0; i < args.length; i+=1) {
+//     newar.push(args[i]);
+//     //console.log(newar[i]);
+//    }
+//   // console.log(newar[4]);
+//   // return newar;
+//   let a = array.indexOf(Math.max(...array));
+//   return a;
+  
+// }
+
+// console.log(fn(array));
+
+
+
+function multiply(...otherArgs) {
+  //console.log(firstNumber); // Значение первого аргумента
+  //console.log(secondNumber); // Значение второго аргумента
+  console.log(otherArgs); // Массив остальных аргументов
+}
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+multiply(1, 2, 3, 4, 5);
+console.log(multiply(1, 2, 3, 4, 5));
