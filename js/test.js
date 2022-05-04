@@ -37,7 +37,6 @@
 // console.log(typeof salary);
 // console.log(salary);
 
-
 //salary=Number (salary.toFixed(2));
 
 // const target = 3;
@@ -121,7 +120,6 @@
 //   return args;
 // }
 
-
 // console.log(fn(1,2,3,4,"home"));
 
 // const multiply = function (x, y) {
@@ -145,7 +143,6 @@
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
 // console.log(calculateEngravingPrice("Web-development is creative work", 40));
 // console.log(calculateEngravingPrice("Web-development is creative work", 20));
-
 
 // function slugify(title) {
 //   // Change code below this line
@@ -171,7 +168,6 @@
 // console.log(lastThreeEls);
 // console.log(copy);
 
-
 // function makeArray(firstArray, secondArray, maxLength) {
 //     // Change code below this line
 
@@ -181,8 +177,6 @@
 //   else
 //   { c = firstArray.concat(secondArray); }
 //    return c;
-  
-
 
 //     // Change code above this line
 //   }
@@ -198,7 +192,7 @@
 //   // Change code below this line
 //   let a = string.split(" ");
 //   let array=[];
-  
+
 //   for (let i = 0; i < a.length; i += 1)
 //   { array[i] = a[i].length; }
 
@@ -208,35 +202,34 @@
 //   let maxsize = a[maxIndex].length;
 //   let ar1 = [];
 //   //return maxsize;
- 
+
 //   for (let y = 0; y < a.length; y += 1)
 //   {
 //     if (a[y].length === maxsize) { ar1.push(a[y]);
-//     } 
+//     }
 // }
-//   return ar1; 
-  // return maxIndex;
-  
-  //return a[maxIndex];
-  
-  // return array;
-  // let b;
-  // b = Math.max(...array);
-  // return b;
-  //array = a[4].length; 
- 
- // for (let i = 0; i < a.length; i += 1)
- // { array = a[i].length; };
+//   return ar1;
+// return maxIndex;
 
-  
-  //return a.length;
-  // let c;
-  // for (let i = 0; i < a.length; i += 1)
-  // { c = a[i].length; }
-  
-  // return c;
+//return a[maxIndex];
 
-  // Change code above this line
+// return array;
+// let b;
+// b = Math.max(...array);
+// return b;
+//array = a[4].length;
+
+// for (let i = 0; i < a.length; i += 1)
+// { array = a[i].length; };
+
+//return a.length;
+// let c;
+// for (let i = 0; i < a.length; i += 1)
+// { c = a[i].length; }
+
+// return c;
+
+// Change code above this line
 // }
 
 // console.log(findLongestWord("The quick brown3 fox jumped over the lazy dog"));
@@ -250,7 +243,6 @@
 // {
 //   if (numbers[i] > value) { newarray.push(numbers[i]); }
 
-  
 // }
 // //return numbers.length;
 // //return newarray;
@@ -263,7 +255,6 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 5));
 // console.log(filterArray([12, 24, 8, 41, 76], 38));
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
-
 
 // function getCommonElements(array1, array2) {
 //   // Change code below this line
@@ -314,7 +305,6 @@
 //     this.books.splice(bookIndex, 1);
 //   },
 // };
-
 
 // console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
 // bookShelf.addBook("The Mist");
@@ -459,8 +449,6 @@
 // apartment.location.country="Jamaica";
 // apartment.location.city="Kingston";
 
-
-
 // // Change code below this line
 
 // console.log(apartment);
@@ -481,8 +469,7 @@
 //   console.log(values);
 //   result.push(values.price);
 //   console.log(values[propName]);
- 
-  
+
 //   }
 //  console.log(result);
 // //return result;
@@ -490,7 +477,6 @@
 // }
 
 // console.log(getAllPropValues('price'));
-
 
 // const products = [
 //   { name: "Radar", price: 1300, quantity: 4 },
@@ -511,7 +497,7 @@
 //    // if(prod.name === 'Radar') {console.log(prod.name);}  else {console.log('eeee');}
 //      if(prod.name === productName) {console.log(prod.name);}  else {console.log('eeee');}
 //   }
-  
+
 //   // Пиши код выше этой строки
 // }
 
@@ -521,7 +507,6 @@
 // // console.log(calculateTotalPrice("Grip"));
 // // console.log(calculateTotalPrice("Scanner"));
 
-
 // function calculateMeanTemperature(forecast) {
 //   // const todayLow = forecast.today.low;
 //   // const todayHigh = forecast.today.high;
@@ -529,7 +514,7 @@
 //   // const tomorrowHigh = forecast.tomorrow.high;
 // //const {{todayLow:today.low, todayHigh:high, tomorrowLow, tomorrowHigh}=forecast;
 //   // Change code above this line
- 
+
 //   const { today: { low: todayLow, high: todayHigh, } , tomorrow:{low: tomorrowLow, high: tomorrowHigh}}= forecast;
 //   console.log(todayLow, todayHigh, tomorrowLow, tomorrowHigh);
 //    return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
@@ -538,7 +523,6 @@
 // console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
 // console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
 
-
 // const atTheOldToad = {
 //   potions: [
 //     { name: "Speed potion", price: 460 },
@@ -546,65 +530,63 @@
 //     { name: "Stone skin", price: 520 },
 //   ],
 
-  // addPotion(newPotion) {
-  //   const { name, price } = newPotion;
-  //   console.log(name);
-  //   console.log(price);
-  //   console.log(newPotion);
-    
-  //   // for (let i = 0; i < this.potions.length; i += 1) {
-  //   //   console.log(this.potions[i].name);
-  //   //   if (this.potions[i].name === name) { return `Naideno ${this.potions[i].name} ravnoe ${name} s indexom ${i}`; }
-  // addPotion(newPotion) {
-  //   const {name} = newPotion;
-  //   for (let pot of this.potions) {
-  //     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
-  //   }
-  //   this.potions.push(newPotion);
+// addPotion(newPotion) {
+//   const { name, price } = newPotion;
+//   console.log(name);
+//   console.log(price);
+//   console.log(newPotion);
 
-    //   // }
-    //   // this.potions.push(newPotion);
-   
-   
-    //   for (let pot of this.potions) {
+//   // for (let i = 0; i < this.potions.length; i += 1) {
+//   //   console.log(this.potions[i].name);
+//   //   if (this.potions[i].name === name) { return `Naideno ${this.potions[i].name} ravnoe ${name} s indexom ${i}`; }
+// addPotion(newPotion) {
+//   const {name} = newPotion;
+//   for (let pot of this.potions) {
+//     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
+//   }
+//   this.potions.push(newPotion);
 
-    //     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
-   
-    //   }
-    //      this.potions.push(newPotion);
-    // },
+//   // }
+//   // this.potions.push(newPotion);
 
-    // removePotion(potionName) {
-    //   for (let i = 0; i < this.potions.length; i += 1) { 
-    //   //console.log(this.potions[i]);
-    //     if (potionName === this.potions[i].name) { this.potions.splice(i, 1); }
-    //     //{ this.potion.splice(i, 1); }
-    //     //{ console.log(this.potions[i]); }
-    //   }
-  
-    //   // const potionIndex = this.potions.indexOf(potionName);
+//   for (let pot of this.potions) {
 
-    //   // if (potionIndex === -1) {
-    //   //   return `Potion ${potionName} is not in inventory!`;
-    //   // }
-    //   // rabotaet!!!!  this.potions.splice(1, 1);
-    //   // this.potions.splice(potionIndex, 1);
-    // },
-  // },
+//     if (name === pot.name) { return `Error! Potion ${newPotion} is already in your inventory!` }
+
+//   }
+//      this.potions.push(newPotion);
+// },
+
+// removePotion(potionName) {
+//   for (let i = 0; i < this.potions.length; i += 1) {
+//   //console.log(this.potions[i]);
+//     if (potionName === this.potions[i].name) { this.potions.splice(i, 1); }
+//     //{ this.potion.splice(i, 1); }
+//     //{ console.log(this.potions[i]); }
+//   }
+
+//   // const potionIndex = this.potions.indexOf(potionName);
+
+//   // if (potionIndex === -1) {
+//   //   return `Potion ${potionName} is not in inventory!`;
+//   // }
+//   // rabotaet!!!!  this.potions.splice(1, 1);
+//   // this.potions.splice(potionIndex, 1);
+// },
+// },
 
 //   updatePotionName(oldName, newName) {
 //     for (let i = 0; i < this.potions.length; i += 1) {
 //       if (this.potions[i].name === oldName) {
-       
+
 //      this.potions[i].name = newName;
-       
+
 //       }
 //     }return `Potion ${oldName} is not in inventory!` ;
-        
-    
+
 //     //this.potions[i].name = newName;
 
-//     //name1.name = newName; 
+//     //name1.name = newName;
 //     // const potionIndex = this.potions.indexOf(oldName);
 
 //     // if (potionIndex === -1) {
@@ -624,12 +606,11 @@
 //console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
 //console.log(atTheOldToad.potions);
 
-// atTheOldToad.updatePotionName("Dragon breath", "Polymorth"); 
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
 // //console.log(atTheOldToad.potions);
-// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"); 
+// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion");
 // //console.log(atTheOldToad.potions);
 // console.log(atTheOldToad.potions);
-
 
 // const atTheOldToad = {
 //   potions: [
@@ -651,11 +632,7 @@
 // console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
 // console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
 
-
-
-
 // console.log(atTheOldToad.potions);
-
 
 // function processCall(recipient, onAvailable, onNotAvailable) {
 //   // Имитируем доступность абонента случайным числом
@@ -666,7 +643,7 @@
 //     return;
 //   }
 
-//   onAvailable(recipient); 
+//   onAvailable(recipient);
 // }
 
 // function takeCall(name) {
@@ -687,7 +664,6 @@
 // processCall("Манго", takeCall, activateAnsweringMachine);
 // processCall("Поли", takeCall, leaveHoloMessage);
 
-
 // function registerGuest(name, callback) {
 //   console.log(`Регистрируем гостя ${name}.`);
 //   callback(name);
@@ -703,8 +679,6 @@
 //   console.log(`Уважаемый(ая) ${name}, ваш номер будет готов через 30 минут.`);
 // });
 
-
-
 // function greet(name1xxx,name2xxx) {
 //   console.log(`Добро пожаловать ${name1xxx},--- ${name2xxx}.`);
 // }
@@ -717,17 +691,15 @@
 
 // registerGuest("Манго",'Voha', greet);
 
-
-
 // const pizzaPalace = {
 //   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
-  
+
 //   order(pizzaName, onSuccess, onError) {
-  
+
 //     if (this.pizzas.includes(pizzaName)) {
-//      return onSuccess(pizzaName); 
+//      return onSuccess(pizzaName);
 // }
-//     return onError(pizzaName); 
+//     return onError(pizzaName);
 
 //   },
 // };
@@ -865,11 +837,11 @@
 // ];
 
 // const getUserNames = users => {
-    
+
 // //return  users.map(user => user.name)
 //   return users.map(mail => mail.email);
 // };
-  
+
 // console.log(getUserNames(users));
 
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
@@ -967,7 +939,7 @@
 
 // const getFriends = (users) => {
 //    const allFriends=users.flatMap(user=> user.friends);
-  
+
 //   const uniqFriends = allFriends.filter((element, index, arrow) => arrow.indexOf(element) === index);
 //   return uniqFriends;
 // };
@@ -990,7 +962,7 @@
 //   return users.reduce((total, number) => {
 //     return total + number.balance;
 //   }, 0);
-  
+
 // };
 
 // console.log(calculateTotalBalance(users));
@@ -1043,7 +1015,6 @@
 // const names = [...books].filter(element => element.rating > MIN_BOOK_RATING)
 //   .map(authors => authors.author)
 // .sort((a, b) => a.localeCompare(b));
-
 
 // console.log(names);
 
@@ -1126,7 +1097,7 @@
 //   return [...users].flatMap(local => local.friends)
 //     .filter((co, ind, arr) => arr.indexOf(co) === ind)
 //   .sort((a,b) => a.localeCompare(b));
-   
+
 // };
 
 // console.log(getSortedFriends(users));
@@ -1139,8 +1110,6 @@
 
 // console.log(getTotalBalanceByGender(users, 'male'));
 // console.log(getTotalBalanceByGender(users, 'female'));
-
-
 
 // class Storage {
 
@@ -1161,7 +1130,7 @@
 //       const index1 = this.items.findIndex((element) => element === itemToremove);
 //     //  console.log(index1);
 //         this.items.splice(index1,1);
-        
+
 //     }
 // }
 
@@ -1179,7 +1148,7 @@
 //   static isEmailTaken(email) {
 //     console.log(User.#takenEmails);
 //     return User.#takenEmails.includes(email);
-   
+
 //   }
 
 //   #email;
@@ -1195,7 +1164,6 @@
 
 // console.log(User.isEmailTaken("poly@mail.com"));
 // console.log(User.isEmailTaken("mango@mail.com"));
-
 
 // class User {
 //   email;
@@ -1223,7 +1191,7 @@
 // constructor ({email, accessLevel}) {
 //   super(email);
 //  this.accessLevel = accessLevel;
-  
+
 // }
 //   // Change code above this line
 // }
@@ -1282,20 +1250,18 @@
 //   // return newar;
 //   let a = array.indexOf(Math.max(...array));
 //   return a;
-  
+
 // }
 
 // console.log(fn(array));
 
+// function multiply(...otherArgs) {
+//   //console.log(firstNumber); // Значение первого аргумента
+//   //console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
 
-
-function multiply(...otherArgs) {
-  //console.log(firstNumber); // Значение первого аргумента
-  //console.log(secondNumber); // Значение второго аргумента
-  console.log(otherArgs); // Массив остальных аргументов
-}
-
-// multiply(1, 2);
-// multiply(1, 2, 3);
-multiply(1, 2, 3, 4, 5);
-console.log(multiply(1, 2, 3, 4, 5));
+// // multiply(1, 2);
+// // multiply(1, 2, 3);
+// multiply(1, 2, 3, 4, 5);
+// console.log(multiply(1, 2, 3, 4, 5));
