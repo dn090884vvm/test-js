@@ -1333,3 +1333,592 @@
 // console.log();
 // console.log();
 // console.log(atTheOldToad.getPotions());
+
+// console.log(document);
+
+// const body = document.body;
+// console.log('Telo', body);
+
+// const list = body.firstElementChild;
+// console.log('pervyi rebenok', list);
+
+// const firstListItem = list.firstElementChild;
+// console.log('pervyi element rebenka', list, firstListItem);
+
+// const listItems = list.children;
+// console.log('vse deti elementa', list, listItems);
+
+// const listWithId = document.querySelector('#menu');
+// listWithId.style.textTransform = 'uppercase';
+// listWithId.style.fontSize = '24px';
+// console.log(listWithId);
+
+// const listWithClass = document.querySelector('.menu');
+// console.log(listWithClass);
+
+// const menuItemsByTagName = document.querySelectorAll('li');
+// console.log(menuItemsByTagName);
+
+// const menuItemsByClass = document.querySelectorAll('.menu-item');
+// console.log(menuItemsByClass);
+
+// const firstMenuItem = document.querySelector('.menu-item');
+// firstMenuItem.style.color = 'tomato';
+// console.log(firstMenuItem);
+
+// //===================================================
+// const message = document.querySelector('#message');
+// console.log(message.value); // Default textarea message
+
+// //===================================================
+// const activeLink = document.querySelector('.btn.active');
+// console.log(activeLink.href); // https://s.codepen.io/about
+
+// //===================================================
+// const image = document.querySelector('.image');
+// console.log(image.src); // https://placeimg.com/640/480/animals
+// image.src = 'https://placeimg.com/640/480/tech';
+
+// const text = document.querySelector('.article-text');
+// console.log(text.textContent); // text inside p.article-text
+// //text.textContent = 'fuck you';
+
+// const title = document.querySelector('.article-title');
+// title.textContent = 'Welcome to hell!';
+
+// const image = document.querySelector('.image');
+
+// console.log(image.attributes); // NamedNodeMap {0: class, 1: src, 2: alt, length: 3}
+
+// console.log(image.hasAttribute('src')); // true
+
+// console.log(image.getAttribute('alt')); // "Lake and clouds"
+
+// image.setAttribute('alt', 'Amazing nature');
+
+// console.log(image.getAttribute('alt')); // Amazing nature
+
+// const saveBtn = document.querySelector('.editor button[data-action="save"]');
+// const closeBtn = document.querySelector('.editor button[data-action="close"]');
+
+// console.log(saveBtn.dataset.action); //save
+// console.log(closeBtn.dataset.action); //close
+
+// const dishes = document.querySelectorAll('.dishes > li');
+// dishes.forEach(dish => {
+//   console.log(`${dish.textContent} coocked by Voha`);
+//   console.log(dish.dataset.id);
+// });
+
+// const list = document.querySelector('.usernames');
+
+// // Adds an item to the end of the list
+// const lastItem = document.createElement('li');
+// lastItem.textContent = 'Poly';
+// list.append(lastItem);
+
+// // Adds an item to the beginning of the list
+// const firstItem = document.createElement('li');
+// firstItem.textContent = 'Ajax';
+// list.prepend(firstItem);
+
+// // Adds a title before the list
+// const title = document.createElement('h2');
+// title.textContent = 'USERNAMES';
+// list.before(title);
+
+// // Adds a paragraph after the list
+// const text = document.createElement('p');
+// text.textContent =
+//   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tenetur assumenda fugiat maxime, soluta aspernatur quasi nihil in asperiores ad distinctio illo et debitis error iure voluptate numquam maiores nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tenetur assumenda fugiat maxime, soluta aspernatur quasi nihil in asperiores ad distinctio illo et debitis error iure voluptate numquam maiores nisi!';
+
+// list.after(text);
+// text.classList.add('newwwA');
+// //text.setAttribute('class', 'new0');
+// console.log(text.attributes.class);
+
+// const toRemove = document.querySelector('.newwwA');
+// toRemove.remove();
+
+// const article = document.querySelector('.article');
+// console.log(article.innerHTML);
+
+// const title = document.querySelector('.article .title');
+// console.log(title.innerHTML);
+
+// const text = document.querySelector('.article .text');
+// console.log(text.innerHTML);
+
+// const link = document.querySelector('.article .link');
+// console.log(link.innerHTML);
+
+// const technologies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node'];
+// const list = document.querySelector('.list');
+
+// const markup = technologies.map(technology => `<li class="list-item">${technology}</li>`).join('');
+
+// // Check the console, you'll see a single string with HTML tags
+// console.log(markup);
+
+// // Adding all the markup in one operation
+// list.innerHTML = markup;
+
+// const singleBtn = document.querySelector('#single');
+
+// const handleClick = () => {
+//   console.log('click event listener callback');
+// };
+
+// singleBtn.addEventListener('click', handleClick);
+
+// // ===============================================
+// const multiBtn = document.querySelector('#multiple');
+
+// const firstCallback = () => {
+//   console.log('First callback!');
+// };
+// const secondCallback = () => {
+//   console.log('Second callback!');
+// };
+// const thirdCallback = () => {
+//   console.log('Third callback!');
+// };
+
+// multiBtn.addEventListener('click', firstCallback);
+// multiBtn.addEventListener('click', secondCallback);
+// //multiBtn.addEventListener('click', thirdCallback);
+
+// const addListenerBtn = document.querySelector('[data-action="add"]');
+// const removeListenerBtn = document.querySelector('[data-action="remove"]');
+// const btn = document.querySelector('#btn');
+
+// const handleClick = () => {
+//   console.log('click event listener callback');
+// };
+
+// addListenerBtn.addEventListener('click', () => {
+//   btn.addEventListener('click', handleClick);
+//   console.log('click event listener was added to btn');
+// });
+
+// removeListenerBtn.addEventListener('click', () => {
+//   btn.removeEventListener('click', handleClick);
+//   console.log('click event listener was removed from btn');
+// });
+
+// const button = document.querySelector('.btn');
+
+// const handleClick = event => {
+//   console.log('event: ', event);
+//   console.log('event type: ', event.type);
+//   console.log('currentTarget: ', event.currentTarget);
+// };
+
+// button.addEventListener('click', handleClick);
+
+// const form = document.querySelector('.register-form');
+
+// form.addEventListener('submit', event => {
+//   event.preventDefault();
+//   const {
+//     elements: { username, password, sex },
+//   } = event.currentTarget;
+//   console.log(username.value, password.value, sex.value + 12345);
+// });
+
+// document.addEventListener('keydown', event => {
+//   console.log('Keydown: ', event);
+// });
+
+// document.addEventListener('keyup', event => {
+//   console.log('Keyup: ', event);
+// });
+
+// document.addEventListener('keydown', event => {
+//   console.log('key: ', event.key);
+//   console.log('code: ', event.code);
+// });
+
+// const clearLogBtn = document.querySelector('[data-action="clear"]');
+// const logList = document.querySelector('.log-list');
+// let keypressCounter = 1;
+
+// document.addEventListener('keydown', logMessage);
+// document.addEventListener('keyup', logMessage);
+// clearLogBtn.addEventListener('click', reset);
+
+// function logMessage({ type, key, code }) {
+//   const markup = `<div class="log-item">
+//     <span class="chip">${keypressCounter}</span>
+//     <ul>
+//       <li><b>Event</b>: ${type}</li>
+//       <li><b>Key</b>: ${key}</li>
+//       <li><b>Code</b>: ${code}</li>
+//     </ul>
+//   </div>`;
+
+//   logList.insertAdjacentHTML('afterbegin', markup);
+
+//   if (type === 'keyup') {
+//     incrementKeypressCounter();
+//   }
+// }
+
+// function reset() {
+//   keypressCounter = 1;
+//   logList.innerHTML = '';
+// }
+
+// function incrementKeypressCounter() {
+//   keypressCounter += 1;
+// }
+
+// document.addEventListener('keydown', event => {
+//   event.preventDefault();
+
+//   if ((event.ctrlKey || event.metaKey) && event.code === 'KeyS') {
+//     console.log('«Ctrl + s» or «Command + s» combo');
+//   }
+// });
+
+// const form = document.querySelector('.form');
+
+// form.addEventListener('submit', handleSubmit);
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const {
+//     elements: { login, password },
+//   } = event.currentTarget;
+
+//   if (login.value === '' || password.value === '') {
+//     return console.log('Please fill in all the fields!');
+//   }
+
+//   console.log(`Login: ${login.value}, Password: ${password.value}`);
+//   event.currentTarget.reset();
+// }
+
+// const select = document.querySelector('.pizza-select');
+// const textOutput = document.querySelector('.text-output');
+// const valueOutput = document.querySelector('.value-output');
+// const ff = document.querySelector('.new');
+
+// //setOutput();
+
+// select.addEventListener('change', setOutput);
+
+// function setOutput() {
+//   const selectedOptionValue = select.value;
+//   const selectedOptionIndex = select.selectedIndex;
+//   const selectedOptionText = select.options[selectedOptionIndex].text;
+
+//   textOutput.textContent = selectedOptionText;
+//   valueOutput.textContent = selectedOptionValue;
+// }
+
+// const dishes = document.querySelectorAll('.pizzaselect > .new');
+// dishes.forEach(dish => {
+//   console.log(dish.getAttribute(value));
+// });
+
+// console.log(dishes);
+
+// const dishes = document.querySelectorAll('.dishes > li');
+// dishes.forEach(dish => {
+//   console.log(dish.dataset.id);
+// });
+
+// const textInput = document.querySelector('.text-input');
+// const output = document.querySelector('.output');
+
+// textInput.addEventListener('input', event => {
+//   output.textContent = event.currentTarget.value;
+// });
+// const parent = document.querySelector('#parent');
+
+// parent.addEventListener('click', event => {
+//   console.log('event.target: ', event.target);
+//   console.log('event.currentTarget: ', event.currentTarget);
+// });
+
+// const colorPalette = document.querySelector('.color-palette');
+// const output = document.querySelector('.output');
+
+// colorPalette.addEventListener('click', selectColor);
+
+// // This is where delegation «magic» happens
+// function selectColor(event) {
+//   if (event.target.nodeName !== 'BUTTON') {
+//     return;
+//   }
+
+//   const selectedColor = event.target.dataset.color;
+
+//   output.textContent = `Selected color: ${selectedColor}`;
+//   output.style.color = selectedColor;
+// }
+
+// // Some helper functions to render palette items
+// createPaletteItems();
+
+// function createPaletteItems() {
+//   const items = [];
+//   for (let i = 0; i < 60; i++) {
+//     const color = getRangomColor();
+//     const item = document.createElement('button');
+//     item.type = 'button';
+//     item.dataset.color = color;
+//     item.style.backgroundColor = color;
+//     item.classList.add('item');
+//     items.push(item);
+//   }
+//   colorPalette.append(...items);
+// }
+
+// function getRangomColor() {
+//   return `#${getRandomHex()}${getRandomHex()}${getRandomHex()}`;
+// }
+
+// function getRandomHex() {
+//   return Math.round(Math.random() * 256)
+//     .toString(16)
+//     .padStart(2, '0');
+// }
+
+// const parent = document.querySelector('#parent');
+
+// parent.addEventListener('click', event => {
+//   console.log('event.target: ', event.target);
+//   console.log('event.currentTarget: ', event.currentTarget);
+// });
+
+// const startBtn = document.querySelector('.js-start');
+// const stopBtn = document.querySelector('.js-stop');
+// let timerId = null;
+
+// startBtn.addEventListener('click', () => {
+//   timerId = setInterval(() => {
+//     console.log(`I love async JS!  ${Math.ceil(Math.random() * 100)}`);
+//   }, 1000);
+// });
+
+// stopBtn.addEventListener('click', () => {
+//   clearInterval(timerId);
+//   console.log(`Interval with id ${timerId} has stopped!`);
+// });
+
+// const date = new Date();
+// const str = date.toString();
+// const notstr = date;
+
+// console.log(notstr);
+// console.log(str);
+// ('2022-05-27T12:36:24.947Z');
+
+// console.log(date);
+// // "Fri Jun 18 2021 15:01:35 GMT+0300 (Eastern European Summer Time)"
+
+// console.log(date.toString());
+// // "Fri Jun 18 2021 15:01:35 GMT+0300 (Eastern European Summer Time)"
+
+// Change value of isSuccess variable to call resolve or reject
+// const isSuccess = false;
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve('Success! Value passed to resolve function');
+//     } else {
+//       reject('Error! Error passed to reject function');
+//     }
+//   }, 2000);
+// });
+
+// // Will run first
+// console.log('Before promise.then()');
+
+// // Registering promise callbacks
+// promise.then(
+//   // onResolve will run third or not at all
+//   value => {
+//     console.log('onResolve call inside promise.then()');
+//     console.log(value); // "Success! Value passed to resolve function"
+//   },
+//   // onReject will run third or not at all
+//   error => {
+//     console.log('onReject call inside promise.then()');
+//     console.log(error); // "Error! Error passed to reject function"
+//   }
+// );
+
+// // Will run second
+// console.log('After promise.then()');
+
+// promise.then(value => {console.log(value);}).catch(error => {console.log(error); });
+
+// const fetchUserFromServer = (username, onSuccess, onError) => {
+//   console.log(`Fetching data for ${username}`);
+
+//   setTimeout(() => {
+//     // Change value of isSuccess variable to simulate request status
+//     const isSuccess = true;
+
+//     if (isSuccess) {
+//       onSuccess(`success value ${username}`);
+//     } else {
+//       onError('error sfsfs');
+//     }
+//   }, 2000);
+// };
+
+// const onFetchSuccess = user => {
+//   console.log(user);
+// };
+
+// const onFetchError = error => {
+//   console.error(error);
+// };
+
+// fetchUserFromServer('Mango', onFetchSuccess, onFetchError);
+
+// const fetchUserFromServer = username => {
+//   return new Promise((resolve, reject) => {
+//     console.log(`Fetching data for ${username}`);
+
+//     setTimeout(() => {
+//       // Change value of isSuccess variable to simulate request status
+//       const isSuccess = true;
+
+//       if (isSuccess) {
+//         resolve('success value');
+//       } else {
+//         reject('error');
+//       }
+//     }, 2000);
+//   });
+// };
+
+// fetchUserFromServer('Mango')
+//   .then(user => console.log(user))
+//   .catch(error => console.error(error));
+
+// const makePromise = (text, delay) => {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(text), delay);
+//   });
+// };
+
+// const promiseA = makePromise('promiseA value', 1000);
+// const promiseB = makePromise('promiseB value', 3000);
+
+// Promise.all([promiseA, promiseB])
+//   .then(value => console.log(value)) //["promiseA value", "promiseB value"]
+//   .catch(error => console.log(error));
+
+// const makeGreeting = guestName => {
+//   if (guestName === '' || guestName === undefined) {
+//     return Promise.reject('Guest name must not be empty');
+//   }
+
+//   return Promise.resolve(`Welcome ${guestName}`);
+// };
+
+// makeGreeting('Mango')
+//   .then(greeting => console.log(greeting))
+//   .catch(error => console.error(error));
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   })
+//   .then(data => {
+//     // Data handling
+//   })
+//   .catch(error => {
+//     // Error handling
+//   });
+
+// const fetchUsersBtn = document.querySelector('.btn');
+// const userList = document.querySelector('.user-list');
+
+// fetchUsersBtn.addEventListener('click', () => {
+//   fetchUsers()
+//     .then(users => renderUserList(users))
+//     .catch(error => console.log(error));
+// });
+
+// function fetchUsers() {
+//   return fetch('https://jsonplaceholder.typicode.com/users').then(response => {
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   });
+// }
+
+// function renderUserList(users) {
+//   const markup = users
+//     .map(user => {
+//       return `<li>
+//           <p><b>Name</b>: ${user.name}</p>
+//           <p><b>Email</b>: ${user.email}</p>
+//           <p><b>Company</b>: ${user.company.name}</p>
+//            <p><b>street</b>: ${user.address.street}</p>
+//         </li>`;
+//     })
+//     .join('');
+//   userList.innerHTML = markup;
+// }
+
+// const searchParams = new URLSearchParams({
+//   _limit: 5,
+//   _sort: 'name',
+// });
+
+// console.log(searchParams.toString()); // "_limit=5&_sort=name"
+
+// const url = `https://jsonplaceholder.typicode.com/users?${searchParams}`;
+// console.log(url); // "https://jsonplaceholder.typicode.com/users?_limit=5&_sort=name"
+
+// const fetchPostsBtn = document.querySelector('.btn');
+// const userList = document.querySelector('.posts');
+
+// fetchPostsBtn.addEventListener('click', () => {
+//   fetchPosts()
+//     .then(posts => renderPosts(posts))
+//     .catch(error => console.log(error));
+// });
+
+// function fetchPosts() {
+//   const params = new URLSearchParams({
+//     _limit: 2,
+//     // Change the group number here
+//     _page: 4,
+//   });
+
+//   return fetch(`https://jsonplaceholder.typicode.com/posts?${params}`).then(response => {
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   });
+// }
+
+// function renderPosts(posts) {
+//   const markup = posts
+//     .map(({ id, title, body, userId }) => {
+//       return `<li>
+//           <h2 class="post-title">${title.slice(0, 30)}</h2>
+//           <p><b>Post id</b>: ${id}</p>
+//           <p><b>Author id</b>: ${userId}</p>
+//           <p class="post-body">${body}</p>
+//         </li>`;
+//     })
+//     .join('');
+//   userList.innerHTML = markup;
+// }
+// import bootstrap from 'bootstrap';
